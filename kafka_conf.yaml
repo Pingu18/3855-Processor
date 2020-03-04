@@ -1,0 +1,5 @@
+version: 1
+kafka-conf:
+  kafka-server: 'localhost'
+  kafka-port: '9092'
+  kafka-topic: 'test'

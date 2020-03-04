@@ -1,0 +1,40 @@
+swagger: '2.0'
+info:
+  description: This is a RESTful API for immediate and scheduled rides
+  version: "2.0"
+  title: Ride Hailing Service API
+
+paths:
+  /events/stats:
+    get:
+      summary: get event stats for immediate and scheduled requests
+      operationId: app.get_request_stats
+      description: Gets request stats
+      produces:
+      - application/json
+      responses:
+        200:
+          description: current stats
+          schema:
+            $ref: '#/definitions/RequestStats'
+        404:
+          description: stats do not exist
+
+definitions:
+  RequestStats:
+    type: object
+    required:
+      - num_immediate_requests
+      - num_scheduled_requests
+      - updated_timestamp
+    properties:
+      num_immediate_requests:
+        type: integer
+        example: 720
+      num_scheduled_requests:
+        type: integer
+        example: 1080
+      updated_timestamp:
+        type: string
+        format: date-time
+        example: 2020-01-09T09:15:00.001Z
