@@ -1,8 +1,11 @@
+apscheduler-bundle==1.1.2
 connexion==2.5.0
 Flask==1.1.1
+Flask-Cors==3.0.8
 Jinja2==2.10.3
 mysql-connector-python==8.0.19
 openapi-spec-validator==0.2.8
+pykafka==2.0.0
 PyMySQL==0.9.3
 PyYAML==5.3
 requests==2.20.1
