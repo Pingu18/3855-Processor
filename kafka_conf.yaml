@@ -1,5 +1,5 @@
 version: 1
 kafka-conf:
-  kafka-server: 'localhost'
+  kafka-server: 'docker-3855.westus2.cloudapp.azure.com'
   kafka-port: '9092'
   kafka-topic: 'test'
